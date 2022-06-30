@@ -1,0 +1,757 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+header{
+	width: 100%;
+	height: 110px;
+	box-shadow: 0 4px 2px -2px gray;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	z-index: 9;
+}
+/*body{
+  background-image: url('images/body.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}*/
+.logo
+{
+	width: 120px;
+	height: 110px;
+	float: left;
+  margin: 0px 0 0 20px;
+}
+.page-logo{
+	float: left;
+	width: 120px;
+	height: 110px;
+}
+.titletext{
+	/*height: 60px;*/
+	font-size: 30px;
+/*	line-height: 60px;*/
+/*	font-family: 'League Gothic', sans-serif;*/
+  font-family: 'League Spartan', sans-serif;
+ /* font-family: 'Amatic SC', cursive;*/
+	font-weight: lighter;
+	float: left;
+  padding-left: 10px;
+  letter-spacing: 10px;
+  padding-top: 18px;
+  width: 100px;
+  text-transform: uppercase;
+}
+nav{
+	margin: 0;
+	padding: 0;
+	line-height: 100px;
+	position: absolute;
+	right: 10px;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	padding:  10px 20px;
+}
+nav ul li a{
+	position: relative;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-weight: bolder;
+	color: black;
+  font-size: bold;
+	-webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+
+}
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0;
+	left: 50%;
+	height: 2px;
+	background: #ffc086;
+	transition: 0.4s ease-out;
+	margin-top: 10px;
+}
+nav ul li a:hover::after{
+	left: 0;
+	width: 100%;
+}
+nav ul li a:hover{
+	color: #ff9636;
+}
+.active{
+	color: #ff9636;
+}
+
+/*--------------------------------------------------plane animation header css*/
+.frame {
+  width: 100px;
+  height: 100px;
+ 	right: 0;
+  position: absolute;
+}
+
+svg {
+  max-width: 100%;
+  height:auto;
+  display: block;
+}
+
+/**
+ * Paper Plane
+ */
+/*----------------------------------------------------------------------------------Paper Plane: Container*/
+.plane-container {
+  width: 100%;
+  margin: 0px auto;
+  z-index: 3;
+  float: right;
+  margin-right: 60px;
+}
+ /*-------------------------------------------------------------------------Paper Plane: Image*/
+.plane {
+  margin-top: 22px;
+  margin-left: 30%;
+  width: 100px;
+  height: 60px;
+}
+
+/*--------------------------------------------------------------------------------Paper Plane: Animation*/
+.plane-container {
+  -webkit-animation: paper-plane-scoping 3s alternate infinite;
+  -moz-animation: paper-plane-scoping 3s alternate infinite;
+  animation: paper-plane-scoping 3s alternate infinite;
+
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+.plane {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation: paper-plane-soaring 2s forwards infinite;
+  -moz-animation: paper-plane-soaring 2s forwards infinite;
+  animation: paper-plane-soaring 2s forwards infinite;
+}
+@-webkit-keyframes paper-plane-soaring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+section
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 110px;
+  background-color: white;
+  height: 700px;
+}
+/*-----------------------------------------------------------------------------image slider*/
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  height: 700px;
+}
+.mySlides {
+  display: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+.myslides,
+.slides{
+	height: 700px;
+	width: 100%;
+}
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+.content{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 760px;
+  background-color: white;
+}
+.intro{
+  width: 900px;
+  height: 620px;
+  background-color: white;
+  margin: 60px auto 20px auto;
+ /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+}
+/*.intro:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}*/
+.image-artist{
+  width: 500px;
+  height: 620px;
+  background-color: white;
+  float: left;
+  z-index: 2;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.thumbnail{
+  width: 500px;
+  height: 620px;
+}
+.text-artist{
+  width: 450px;
+  background-color: white;
+  float: left;
+  z-index: 3;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 50px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.artist-intro{
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+.bigtext{
+  font-size: 40px;
+  font-weight: bolder;
+}
+.title-content{
+  position: absolute;
+  margin-left: 520px;
+  padding-top: 1px;
+  font-size: 40px;
+}
+.highlights{
+  width: 100%;
+  position: absolute;
+  height: 400px;
+  top: 1500px;
+}
+.highlights-container{
+  float: left;
+  width: 100%;
+  height: 260px;
+  position: absolute;
+  top: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.text-highlight{
+  margin-top: 30px;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'League Spartan', sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;  
+}
+.bgtext{
+  font-size: 60px;
+  position: absolute;
+  letter-spacing: 20px;
+  left: 34%;
+  font-weight: bolder;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.05);
+  /*-webkit-text-stroke:  1px orange;*/
+
+}
+.element{
+  width: 320px;
+  height: 250px;
+  flex-direction: left;
+  color: darkred;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.element:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.image-highlights{
+  width: 320px;
+  height: 250px;
+  transition: opacity 1s ease;
+}
+.image-highlights:hover{
+  opacity: 0.5;
+}
+.desc{
+    position: absolute;
+    bottom: 100px;
+    margin:  0 10px;
+    width: 80%;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    width: 300px;
+    padding: 2px;
+}
+.element:hover .desc{
+  opacity: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.element:hover .image-highlights{
+  opacity: 0.5;
+}
+footer{
+  position: absolute;
+  top: 1900px;
+  width: 100%;
+  height: 300px;
+  background-color: #283040;
+}
+.contacts{
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin: 25px 25px 25px 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  padding-left: 20px;
+  padding-top: 20px;
+  /*color: #ffac8c;*/
+  color: #d6d8dc;
+}
+.mailto{
+  text-decoration: none;
+  /*color: #ffac8c;*/
+  color:  #d6d8dc;
+}
+.mailto:hover{
+  color: white;
+}
+.fa{
+  padding:  8px 7px 0 7px;
+}
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 200px; /* change this to change the size*/
+}
+.footer-images{
+  width: 600px;
+  height: 250px;
+  margin: 25px 50px 25px 50px;
+  /*background-color: red;*/
+  float: right;
+}
+.small-thumbnail{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.small-thumbnail-img{
+  width: 100px;
+  height: 100px;
+}
+.small-thumbnail a{
+  text-decoration: none;
+}
+.small-thumbnail:hover a{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  opacity: 0.5;
+}
+.copyright{
+  width: 100%;
+  background-color: greenyellow;
+  position: absolute;
+  top: 2200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #191e28;
+}
+.copyright-text{
+  color: #d6d8dc;
+  padding: 10px;
+  font-size: 15px;
+  /*font-family: 'Lora', serif;*/
+}
+/*------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+-----------------------------------------media.html-------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------*/
+.media-section{
+  width: 100%;
+  height: 1900px;
+  position: absolute;
+  top: 110px;
+  display: flex;
+  justify-content: center;
+  /*background-color: #e5e5ff;*/
+}
+.article{
+  margin: 0 auto;
+  padding: 0;
+  width: 700px;
+  height: 300px;
+ /* background-color: white; */ 
+  position: absolute;
+  top: 80px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.article-img{
+  width: 250px;
+  height: 300px;
+  float: left;
+ /* background-color:orange;*/
+ 
+}
+.articleimage{
+  width: 250px;
+  height: 300px;
+}
+.article-text{
+  width: 450px;
+  height: 300px;
+/*  background-color: white;*/
+ /* float: left;*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.article1{
+  margin: 0 auto;
+  padding: 0;
+  width: 700px;
+  height: 300px;
+  position: absolute;
+  top: 430px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.article2{
+  margin: 0 auto;
+  padding: 0;
+  width: 700px;
+  height: 300px; 
+  position: absolute;
+  top: 780px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.article3{
+  margin: 0 auto;
+  padding: 0;
+  width: 700px;
+  height: 300px;
+  position: absolute;
+  top: 1130px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.article4{
+  margin: 0 auto;
+  padding: 0;
+  width: 700px;
+  height: 300px;  
+  position: absolute;
+  top: 1480px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.copyright-media{
+  width: 100%;
+  position: absolute;
+  top: 1980px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #191e28;
+}
+.card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 25px; 
+    padding: 8px;
+    width: 200px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.article-img:hover .card-btn {
+    opacity: 1;
+}
+.card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+}
+.articlepart{
+  padding: 30px;
+  font-family: 'Heebo', sans-serif;
+}
+.article-text p a:hover{
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+.interviews{
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-top: 27px;
+  font-family: 'League Spartan', sans-serif;
+}
+.mediabig{
+  position: absolute;
+  font-size: 60px;
+  top: 7px;
+  color: rgba(0, 0, 0, 0.1);
+  letter-spacing: 30px;
+  margin-left: 21px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+----------------------------------------gallery.html--------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------*/
+.container {
+  margin: 0 auto;
+  position: absolute;
+  top: 130px;
+  padding: 40px 5%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Responsive image gallery rules begin*/
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-gallery  li {
+  flex: 1 1 auto; 
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  /*border-radius: 5px;*/
+  background-color: black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.gallery-copyright{
+  width: 100%;
+  position: absolute;
+  top: 2400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #191e28;
+}
+#myImg:hover{
+  opacity: 0.6;
+}
+/*------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-------------------------------IMAGE POP UP IN GALLERY MODAL CSS---------------------------------------------
+----------------------------------------------------------------------------------------------------------*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  justify-content: center;
+  align-content: center;
+}
+
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(w)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+--------------------portfolio.html--------------------------------------------------
+-------------------------------------------------------------------------------------*/
+
+.copyright-portfolio{
+  width: 100%;
+  position: absolute;
+  top: 1500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  vertical-align: middle;
+  background-color: #191e28;
+}
+.port-cont{
+  margin: 0 auto;
+  padding: 0;
+  width: 800px;
+  padding: 20px;
+}
+.portfolio-thumbnails{
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container-thumbnail{
+  width: 350px;
+  height: 300px;
+  float: left;
+  background-color: black;
+  margin: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.linkthumbnail{
+  object-fit: cover;
+  width: 350px;
+  height: 300px;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+.linkthumbnail:hover{
+  opacity: 0.7;
+}
+.portfolio-headiing{
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-top: 27px;
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+}
