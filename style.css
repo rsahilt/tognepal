@@ -604,7 +604,7 @@ ul {
   height: 300px;
   cursor: pointer;
   position: relative;
-  background-color: black;
+  /*background-color: black;*/
 }
 
 .image-gallery li img {
@@ -626,7 +626,7 @@ ul {
   align-content: center;
   background-color: #191e28;
 }
-#myImg:hover{
+.modal-target:hover{
   opacity: 0.6;
 }
 /*------------------------------------------------------------------------------------------------
@@ -677,7 +677,7 @@ ul {
 }
 
 /* The Close Button */
-.close {
+.modal-close {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -687,8 +687,8 @@ ul {
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.modal-close:hover,
+.modal-close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
