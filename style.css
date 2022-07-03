@@ -924,15 +924,20 @@ ul {
     left: -100%;
     gap: 0;
     flex-direction: column;
+    display: flex;
     top: 70px;
-    background-color: green;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    z-index: 9;
+    height: 100%;
   }
   .nav-item{
     margin: 16px 0;
+  }
+  .nav-link{
+    color:  white;
   }
   .nav-menu.active{
     left: 0;
