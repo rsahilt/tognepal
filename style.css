@@ -234,8 +234,8 @@ section
   background-color: white;
 }
 .intro{
-  width: 900px;
-  height: 620px;
+  width: 1000px;
+  height: 700px;
   background-color: white;
   margin: 60px auto 20px auto;
  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -257,12 +257,13 @@ section
   height: 620px;
 }
 .text-artist{
-  width: 450px;
+  width: 570px;
   background-color: white;
   float: left;
   z-index: 3;
   position: absolute;
   margin-left: 400px;
+  top: 100px;
   margin-top: 50px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -278,8 +279,9 @@ section
 .title-content{
   position: absolute;
   margin-left: 520px;
-  padding-top: 1px;
-  font-size: 40px;
+  padding-top: 5px;
+  font-size: 25px;
+  width: 470px;
 }
 .highlights{
   width: 100%;
@@ -458,31 +460,28 @@ footer{
   padding: 0;
   width: 700px;
   height: 300px;
- /* background-color: white; */ 
+  background-color: white;  
   position: absolute;
   top: 80px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
 }
 .article-img{
   width: 250px;
   height: 300px;
   float: left;
- /* background-color:orange;*/
  
 }
 .articleimage{
   width: 250px;
   height: 300px;
+  
 }
 .article-text{
   width: 450px;
   height: 300px;
-/*  background-color: white;*/
- /* float: left;*/
   display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
+  background-color: white;
 }
 
 .article1{
@@ -555,6 +554,8 @@ footer{
 .articlepart{
   padding: 30px;
   font-family: 'Heebo', sans-serif;
+  padding-top: 100px;
+  text-align: center;
 }
 .article-text p a:hover{
   color: rgba(0, 0, 0, 0.6);
@@ -873,7 +874,7 @@ ul {
 .copyright-abt{
   width: 100%;
   position: absolute;
-  top: 1800px;
+  top: 1750px;
   display: flex;
   justify-content: center;
   align-content: center;
