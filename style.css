@@ -976,7 +976,6 @@ ul {
   background-color: white;
   height: 250px;
 }
-/*-----------------------------------------------------------------------------image slider*/
 .slideshow-container {
   max-width: 500px;
   position: relative;
@@ -996,7 +995,7 @@ ul {
   height: auto;
   position: absolute;
   top: 320px;
-  max-width: 380px;
+  width: 100%;
   background-color: white;
   justify-content: center;
   align-content: center;
@@ -1006,24 +1005,23 @@ ul {
   display: none;
 }
 .intro{
-  max-width: 380px;
+  width: 100%;
   background-color: white;
   margin: 0;
   padding: 0;
 }
 .text-artist{
   margin-left: 0;
-  max-width: 380px;
+  width: 100%;
   box-shadow: none;
   text-align: justify;
   top: 5px;
-  font-size: 8px;
-  padding: 0 15px;
+  padding: 0;
 }
 .artist-intro{
   font-family: 'Heebo', sans-serif;
   font-size: 16px;
-  padding: 0;
+  padding: 0 15px;
   margin: 0;
 }
 .highlights{
@@ -1086,5 +1084,184 @@ footer{
   font-size: 14px;
   text-align: center;
 }
+/*-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-----------------------------------aboutme mobile--------------------------------
+------------------------------------------------------------------------------------*/
+
+.section-aboutme{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 130px;
+  width: 100%;  
+  display: flex;
+  justify-content: center;
 }
+.dpcontainer{
+  width: 100%;
+  height: 330px;
+  float: left;
+}
+.dp{
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  background-color: black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border: none;
+  outline: none;
+}
+.dpimg{
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+}
+.bio{
+  width: 100%;
+  float: left;
+}
+.abouttxt{
+  padding: 20px 15px;
+  text-align: justify;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.copyright-abt{
+  display: none;
+}
+.aboutmeheading{
+  padding-top: 30px!important;
+}
+.abouttxt{
+  padding-top: 5px!important;
+}
+/*-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-----------------------------------gallery mobile--------------------------------
+------------------------------------------------------------------------------------*/
+.container{
+  top: 90px;
+}
+.gallery-copyright{
+  display: none;
+}
+/*-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-----------------------------------portfolio mobile--------------------------------
+------------------------------------------------------------------------------------*/
+.copyright-portfolio{
+  display: none;
+}
+.portfolio-thumbnails{
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.port-cont{
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+ /* padding: 20px;*/
+}
+.container-thumbnail{
+  width: 280px;
+  height: 250px;
+  float: left;
+  background-color: black;
+  margin: 20px 40px 20px 50px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.linkthumbnail{
+  object-fit: cover;
+  width: 280px;
+  height: 250px;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+/*-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-----------------------------------jwalanyaka mobile--------------------------------
+------------------------------------------------------------------------------------*/
+.copyright-jn{
+  display: none;
+}
+.imagesjn{
+  position: absolute;
+  left: 32px;
+}
+.jnbgt{
+  padding: 0 10px;
+}
+.jnsection{
+  position: absolute;
+  top: 90px;
+  margin: 0;
+  padding: 0;
+  /*background-color: red;*/
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.jncontainer{
+  width: 100%;
+  height: 100%;
+  /*background-color: green;*/
+  margin: 20px 0;
+}
+.jnimages{
+  width: 100%;
+  height: 400px;
+  float: left;
+}
+.jnstory{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.imagesjn{
+  width: 300px;
+  height: 380px;
+  background-color: black;
+  float: left;
+  margin: 10px 10px 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.imagedivjn{
+  width: 300px;
+  height: 380px;
+  transition: opacity 0.5s ease;
+}
+
+.storyparagraph{
+  font-size: 16px;
+  padding: 0 15px;
+}
+.portfolio-heading{
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-top: 0px;
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+}
+
+
+
+/*-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-----------------------------------media mobile--------------------------------
+------------------------------------------------------------------------------------*/
+
+
+
 }
